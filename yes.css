@@ -1,0 +1,82 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'zeyada', sans-serif;
+    font-size: 20px;
+}
+
+/* Full-Screen Background */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    text-align: center;
+}
+
+/* Confirmation Box */
+.yes-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Messages */
+.yes-message {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+
+.yes-text {
+    font-size: 1.2rem;
+    color: white;
+    margin: 10px 0;
+}
+
+/* Cute Image */
+.love-img {
+    width: 120px;
+    margin: 20px 0;
+    animation: bounce 1.5s infinite alternate;
+}
+
+@keyframes bounce {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-10px); }
+}
+
+/* Back Button */
+.back {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ff4d79;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(255, 77, 121, 0.4);
+    transition: 0.3s;
+}
+
+.back:hover {
+    background-color: #e6396f;
+    transform: scale(1.05);
+}

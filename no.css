@@ -1,0 +1,82 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'zeyada', sans-serif;
+}
+
+/* Full-Screen Background (Black for Sad Mood) */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: black;
+    text-align: center;
+}
+
+/* Sad Response Box */
+.no-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Sad Message */
+.no-message {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Message Text */
+.no-text {
+    font-size: 1.2rem;
+    color: white;
+    margin: 10px 0;
+}
+
+.p {
+  width:20px;
+  height:20px;
+}
+
+
+/* Bounce Animation */
+@keyframes bounce {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-10px); }
+}
+
+/* Back Button */
+.back {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ff4d79;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(255, 77, 121, 0.4);
+    transition: 0.3s;
+}
+
+.back:hover {
+    background-color: #e6396f;
+    transform: scale(1.05);
+}
